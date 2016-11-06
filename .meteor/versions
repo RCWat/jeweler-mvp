@@ -3,6 +3,7 @@ autopublish@1.0.7
 autoupdate@1.2.11
 babel-compiler@6.13.0
 babel-runtime@0.1.13
+babrahams:editable-text@0.8.30
 base64@1.0.10
 binary-heap@1.0.10
 blaze@2.1.9
@@ -14,18 +15,21 @@ caching-html-compiler@1.0.7
 callback-hook@1.0.10
 check@1.2.4
 d0minikk:materialize-meteor@1.95.1
+dburles:mongo-collection-instances@0.3.5
 ddp@1.2.5
 ddp-client@1.2.9
 ddp-common@1.2.7
 ddp-server@1.2.10
 deps@1.0.12
 diff-sequence@1.0.7
+djedi:sanitize-html@1.11.3
 ecmascript@0.5.9
 ecmascript-runtime@0.3.15
 ejson@1.0.13
 es5-shim@4.6.15
 fastclick@1.0.13
 geojson-utils@1.0.10
+gwendall:body-events@0.1.6
 hot-code-push@1.0.4
 html-tools@1.0.11
 htmljs@1.0.11
@@ -41,6 +45,7 @@ iron:middleware-stack@1.1.0
 iron:router@1.0.13
 iron:url@1.0.11
 jquery@1.11.10
+lai:collection-extensions@0.2.1_1
 launch-screen@1.0.12
 livedata@1.0.18
 logging@1.1.16

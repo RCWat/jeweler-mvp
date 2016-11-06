@@ -15,7 +15,13 @@ Template.inventory.helpers({
   }
 });
 
-Template.inventory_insert.events({
+Template.inventory.events({
+  'click .btn-modal': () => {
+     $("#modal1").openModal({dismissible: false})
+  }
+})
+
+Template.inventory.events({
   'submit .form-create-item'(event) {
     // Prevent default browser form submit
     event.preventDefault();
