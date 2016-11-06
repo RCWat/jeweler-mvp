@@ -1,0 +1,53 @@
+<template name="inventory">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Retail Price</th>
+        <th>Wholesale Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {{#each items}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{quantity}}</td>
+        <td>{{retail}}</td>
+        <td>{{wholesale}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{>inventory_insert}}
+</template>
+
+<template name="inventory_insert">
+  <div class="row">
+    <form class="col s12 form-create-item">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="item_name" type="text" class="validate">
+          <label for="item_name">Item Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="item_quantity" type="text" class="validate">
+          <label for="item_quantity">Quantity</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="item_retail" type="number" class="validate">
+          <label for="item_retail">Retail Price</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="item_wholesale" type="number" class="validate">
+          <label for="item_wholesale">Wholesale Price</label>
+        </div>
+      </div>
+      <button class="waves-effect waves-light btn btn-submit" type="submit">Create</button>
+    </form>
+    <button class="waves-effect waves-light btn btn-delete" type="submit">Delete All Items</button>
+  </div>
+</template>
